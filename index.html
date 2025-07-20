@@ -6,41 +6,72 @@
   <title>Reduce Water Waste</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      background-attachment: fixed;
+      color: #222;
     }
     header {
-      background: #006994;
+      background: url('https://images.unsplash.com/photo-1505843782872-5b59e25d02c1?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
       color: white;
-      padding: 2em;
+      padding: 3em 1em;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      color: #004080;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #004080;
     }
     main {
       padding: 2em;
+      max-width: 960px;
+      margin: auto;
     }
     section {
       margin-bottom: 2em;
+      padding: 1.5em;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #006994;
+      color: #007c91;
+      margin-top: 0;
     }
-    .tips ul {
-      list-style-type: disc;
-      margin-left: 2em;
+    p, li {
+      line-height: 1.6;
+      font-size: 1.05em;
+    }
+    .tips ul, .didyouknow ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .tips li, .didyouknow li {
+      background: #e3f2fd;
+      border-left: 4px solid #0277bd;
+      padding: 0.75em 1em;
+      margin-bottom: 1em;
+      border-radius: 4px;
     }
     footer {
-      background: #006994;
+      background: #007c91;
       color: white;
       text-align: center;
       padding: 1em 0;
       margin-top: 2em;
     }
     .cta {
-      background: #dff0d8;
+      background: #e1f5fe;
       padding: 1em;
-      border-left: 5px solid #3c763d;
+      border-left: 5px solid #0277bd;
       margin-top: 2em;
     }
     .video-container, .form-container {
@@ -50,12 +81,25 @@
     iframe {
       max-width: 100%;
       height: 315px;
+      border-radius: 8px;
     }
     input, textarea, button {
       padding: 0.5em;
       margin-top: 0.5em;
       width: 100%;
       max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background: #007c91;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005f6b;
     }
     form {
       display: inline-block;
@@ -71,33 +115,44 @@
   <main>
     <section class="intro">
       <h2>The Problem</h2>
-      <p>Everyday activities like leaving the tap running or ignoring small leaks lead to enormous water waste. The average U.S. household loses nearly 10,000 gallons annually just from leaks (EPA, 2024).</p>
+      <p>We often take water for granted. Letting the tap run while brushing our teeth, overwatering lawns, or ignoring leaks may seem minor, but these habits waste thousands of gallons each year. Together, they increase water bills and environmental harm.</p>
     </section>
     <section class="global-impact">
       <h2>Global Impact</h2>
-      <p>Over 2 billion people live in areas with high water stress (UN Water, 2023). Meanwhile, Americans use about 100 gallons of water each day (USGS, 2024).</p>
+      <p>Over two billion people live with high water stress. Scarce water affects health, food production, and daily life. By saving water at home, we help build a more sustainable future for everyone.</p>
+    </section>
+    <section class="didyouknow">
+      <h2>Did You Know?</h2>
+      <ul>
+        <li>Only 1% of the earth’s water is drinkable. The rest is salt water or frozen.</li>
+        <li>The human body is about 75% water, and we can only survive a few days without it.</li>
+        <li>Landscaping uses half of home water in California. Showers and toilets take most of the rest.</li>
+        <li>If every U.S. home had a faucet dripping once per second, we'd waste 928 million gallons daily.</li>
+      </ul>
     </section>
     <section class="tips">
-      <h2>Simple Water-Saving Tips</h2>
+      <h2>How You Can Save Water</h2>
       <ul>
-        <li>Fix leaky faucets and pipes promptly</li>
-        <li>Turn off the tap while brushing your teeth or shaving</li>
-        <li>Use a bucket to catch shower water while it heats up</li>
-        <li>Water plants early in the morning or late in the evening</li>
-        <li>Install low-flow showerheads and toilets</li>
-        <li>Only run dishwashers and washing machines with full loads</li>
+        <li><strong>Fix leaks:</strong> Check under sinks or around pipes. Even small drips add up fast.</li>
+        <li><strong>Turn off the tap:</strong> When brushing teeth or shaving, only use water when needed.</li>
+        <li><strong>Use a bucket:</strong> Catch water while your shower warms up. Use it on plants.</li>
+        <li><strong>Water wisely:</strong> Early morning or evening reduces loss from evaporation.</li>
+        <li><strong>Install low-flow devices:</strong> These reduce usage without lowering performance.</li>
+        <li><strong>Wait for full loads:</strong> Dishwashers and laundry machines waste less when full.</li>
       </ul>
     </section>
     <section class="cta">
       <h2>Take the Challenge</h2>
-      <p>Share one water-saving tip with your family and challenge yourself to save at least 10 gallons of water this week. You don’t have to do everything—just something. Start today.</p>
+      <p>Share one tip with your family. Save 10 gallons this week. You don’t have to do everything—just something.</p>
     </section>
     <div class="video-container">
       <h2>Watch Inspiring Water-Saving Videos</h2>
       <iframe src="https://www.youtube.com/embed/TAgJgkpyJ9Y" title="Simple Ways to Save Water" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/nTcFXJT0Fsc" title="Water is Life Video" frameborder="0" allowfullscreen></iframe>
+    </div>
     </div>
     <div class="form-container">
-      <h2>Share Your Own Water-Saving Tip</h2>
+      <h2>Share Your Own Tip</h2>
       <form action="#" method="post" onsubmit="alert('Thank you for sharing your tip!'); return false;">
         <label for="name">Your Name (optional):</label><br>
         <input type="text" id="name" name="name"><br>
@@ -106,9 +161,10 @@
         <button type="submit">Submit Tip</button>
       </form>
     </div>
+    <footer>
+      <p>Created by Miqueias Torres de Almeida for Interpersonal Communication Class | 2025</p>
+    </footer>
   </main>
-  <footer>
-    <p>Created by Miqueias Torres de Almeida for Interpersonal Communication Class | 2025</p>
-  </footer>
 </body>
 </html>
+
